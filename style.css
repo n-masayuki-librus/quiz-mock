@@ -13,6 +13,10 @@
   border: 2px red solid
 }
 
+body {
+  font-family:'Meiryo UI','メイリオ',Verdana,'ＭＳ Ｐゴシック',sans-serif;
+}
+
 h3 {
   font-size: 26px;
 }
