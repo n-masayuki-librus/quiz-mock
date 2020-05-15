@@ -1,0 +1,46 @@
+.iframe-wrap {
+  position: relative;
+  width: 100%;
+  padding: calc(480 / 854 * 100%) 0 0; /* 高さと横幅の数字には単位は入れません。 */
+}
+
+.iframe-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+h3 {
+  font-size: 26px
+}
+
+p {
+  font-size: 20px
+}
+
+ul {
+  padding: 0;
+  position: relative;
+}
+ul li {
+  width: 44%;
+  line-height: 1.5;
+  margin: 0 2% 2% 0;
+  padding: 0;
+  float: left;
+  text-align: center;
+  list-style-type: none!important;
+  background: -webkit-linear-gradient(top, skyblue 0%, #5aade6 100%);/*グラデーション*/
+  background: linear-gradient(to bottom, skyblue 0%, #5aade6 100%);/*グラデーション*/
+  color: #fff;
+}
+
+/* ul li:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f138";
+  position: absolute;
+  left : 0.5em;
+  color: white;
+} */
