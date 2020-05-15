@@ -20,64 +20,64 @@ h3 {
   display        : inline-block;
   color          : #ffffff;            /* 文字の色 */
   font-size      : 36pt;               /* 文字のサイズ */
-  letter-spacing : 6px;                /* 文字間 */
+  letter-spacing : 4px;                /* 文字間 */
   text-shadow    :
-       3px  3px 0px #ff0000,
-      -3px  3px 0px #ff0000,
-       3px -3px 0px #ff0000,
-      -3px -3px 0px #ff0000,
-       3px  0px 0px #ff0000,
-       0px  3px 0px #ff0000,
-      -3px  0px 0px #ff0000,
-       0px -3px 0px #ff0000;        /* 文字の影 */
+       2px  2px 0px #ff0000,
+      -2px  2px 0px #ff0000,
+       2px -2px 0px #ff0000,
+      -2px -2px 0px #ff0000,
+       2px  0px 0px #ff0000,
+       0px  2px 0px #ff0000,
+      -2px  0px 0px #ff0000,
+       0px -2px 0px #ff0000;        /* 文字の影 */
 }
 
 .h3Char2 {
   display        : inline-block;
   color          : #ffffff;            /* 文字の色 */
   font-size      : 36pt;               /* 文字のサイズ */
-  letter-spacing : 6px;                /* 文字間 */
+  letter-spacing : 4px;                /* 文字間 */
   text-shadow    :
-       3px  3px 0px #5aade6,
-      -3px  3px 0px #5aade6,
-       3px -3px 0px #5aade6,
-      -3px -3px 0px #5aade6,
-       3px  0px 0px #5aade6,
-       0px  3px 0px #5aade6,
-      -3px  0px 0px #5aade6,
-       0px -3px 0px #5aade6;        /* 文字の影 */
+       2px  2px 0px #5aade6,
+      -2px  2px 0px #5aade6,
+       2px -2px 0px #5aade6,
+      -2px -2px 0px #5aade6,
+       2px  0px 0px #5aade6,
+       0px  2px 0px #5aade6,
+      -2px  0px 0px #5aade6,
+       0px -2px 0px #5aade6;        /* 文字の影 */
 }
 
 .h3Char3 {
   display        : inline-block;
   color          : #ffffff;            /* 文字の色 */
   font-size      : 36pt;               /* 文字のサイズ */
-  letter-spacing : 6px;                /* 文字間 */
+  letter-spacing : 4px;                /* 文字間 */
   text-shadow    :
-       3px  3px 0px #008000,
-      -3px  3px 0px #008000,
-       3px -3px 0px #008000,
-      -3px -3px 0px #008000,
-       3px  0px 0px #008000,
-       0px  3px 0px #008000,
-      -3px  0px 0px #008000,
-       0px -3px 0px #008000;        /* 文字の影 */
+       2px  2px 0px #008000,
+      -2px  2px 0px #008000,
+       2px -2px 0px #008000,
+      -2px -2px 0px #008000,
+       2px  0px 0px #008000,
+       0px  2px 0px #008000,
+      -2px  0px 0px #008000,
+       0px -2px 0px #008000;        /* 文字の影 */
 }
 
 .h3Char4 {
   display        : inline-block;
   color          : #ffffff;            /* 文字の色 */
   font-size      : 36pt;               /* 文字のサイズ */
-  letter-spacing : 6px;                /* 文字間 */
+  letter-spacing : 4px;                /* 文字間 */
   text-shadow    :
-       3px  3px 0px #ff6928,
-      -3px  3px 0px #ff6928,
-       3px -3px 0px #ff6928,
-      -3px -3px 0px #ff6928,
-       3px  0px 0px #ff6928,
-       0px  3px 0px #ff6928,
-      -3px  0px 0px #ff6928,
-       0px -3px 0px #ff6928;        /* 文字の影 */
+       2px  2px 0px #ff6928,
+      -2px  2px 0px #ff6928,
+       2px -2px 0px #ff6928,
+      -2px -2px 0px #ff6928,
+       2px  0px 0px #ff6928,
+       0px  2px 0px #ff6928,
+      -2px  0px 0px #ff6928,
+       0px -2px 0px #ff6928;        /* 文字の影 */
 }
 
 p {
