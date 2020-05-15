@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+      var query = location.search;
+      var rawValue1 = query.split('?');
+      var value = rawValue1[1].split('&');
+      var resultPoint = value[0].split('=')[1];
+      var preChoice = value[1].split('=')[1];
+      console.log(decodeURIComponent(preChoice));
+      console.log(decodeURIComponent(resultPoint));
+      if (decodeURIComponent(preChoice) === "1") {
+        resultPoint=parseInt(resultPoint) + 1;
+      }
+      console.log('あああ' + resultPoint);
+      function  firstscript(){
+        document.getElementById('resultCount').innerHTML = 'あなたは3問中' + resultPoint + '問正解でした。';
+        var resultText;
+        if (resultPoint == 3){
+          resultText = "おめでとうございます！素晴らしいですね！<br>弊社のことを知っていただきありがとうございます。"
+        } else {
+          resultText = "ご回答ありがとうございました。<br>機会がございましたら弊社のことをもっと調べていただければと存じます。"
+        }
+        document.getElementById('resultText').innerHTML = resultText;
+      }
+    </script>
+  </head>
+  <body onload="firstscript();">
+
+  <h3>QUIZ!</h3>
+
+  <p>お疲れ様です。</p>
+  <br>
+  <p><div id='resultCount'></div></p>
+
+  <p><div id='resultText'></div></p>
+
+  </body>
+</html>

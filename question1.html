@@ -5,6 +5,11 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="./style.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+      function setChoice(choice){
+        location.href = './question2.html?choice=' +  encodeURIComponent(choice)
+      }
+    </script>
   </head>
   <body>
 
@@ -13,10 +18,10 @@
   <p>第一問：人気の発毛剤はどれ？</p>
   <br>
   <ul>
-    <li><a href="./question2.html">①スカルプD</a></li>
-    <li><a href="./question2.html">②チャップアップ</a></li>
-    <li><a href="./question2.html">③リアップ</a></li>
-    <li><a href="./question2.html">④リグロ</a></li>
+    <li><div onclick="setChoice('1')">①スカルプD</div></li>
+    <li><div onclick="setChoice('0')">②チャップアップ</div></li>
+    <li><div onclick="setChoice('0')">③リアップ</div></li>
+    <li><div onclick="setChoice('0')">④リグロ</div></li>
   </ul>
 
   </body>

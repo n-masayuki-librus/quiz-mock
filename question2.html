@@ -5,6 +5,18 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="./style.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+      var query = location.search;
+      var value = query.split('=');
+      var resultPoint = 0;
+      console.log(decodeURIComponent(value[1]));
+      if (decodeURIComponent(value[1]) === "1") {
+        resultPoint+=1;
+      }
+      function setChoice(choice){
+        location.href = './question3.html?resultPoint=' + encodeURIComponent(resultPoint) + '&choice=' +  encodeURIComponent(choice);
+      }
+    </script>
   </head>
   <body>
 
@@ -13,10 +25,10 @@
   <p>第二問：スカルプDのシャンプーは何種類？</p>
   <br>
   <ul>
-    <li><a href="./question3.html">①9種類</a></li>
-    <li><a href="./question3.html">②11種類</a></li>
-    <li><a href="./question3.html">③7種類</a></li>
-    <li><a href="./question3.html">④この中に正解はない</a></li>
+    <li><div onclick="setChoice('0')">①9種類</div></li>
+    <li><div onclick="setChoice('1')">②11種類</div></li>
+    <li><div onclick="setChoice('0')">③7種類</div></li>
+    <li><div onclick="setChoice('0')">④この中に正解はない</div></li>
   </ul>
 
   </body>
