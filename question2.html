@@ -8,10 +8,12 @@
     <script type="text/javascript">
       var query = location.search;
       var value = query.split('=');
-      var resultPoint = 0;
+      var resultPoint = "";
       console.log(decodeURIComponent(value[1]));
       if (decodeURIComponent(value[1]) === "1") {
-        resultPoint+=1;
+        resultPoint=resultPoint + "1";
+      } else {
+        resultPoint=resultPoint + "0";
       }
       function setChoice(choice){
         location.href = './question3.html?resultPoint=' + encodeURIComponent(resultPoint) + '&choice=' +  encodeURIComponent(choice);

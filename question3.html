@@ -14,7 +14,9 @@
       console.log(decodeURIComponent(preChoice));
       console.log(decodeURIComponent(resultPoint));
       if (decodeURIComponent(preChoice) === "1") {
-        resultPoint=parseInt(resultPoint) + 1;
+        resultPoint+=1;
+      } else {
+        resultPoint=resultPoint + "0";
       }
       function setChoice(choice){
         location.href = './result.html?resultPoint=' + encodeURIComponent(resultPoint) + '&choice=' +  encodeURIComponent(choice);

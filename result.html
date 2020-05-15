@@ -14,18 +14,59 @@
       console.log(decodeURIComponent(preChoice));
       console.log(decodeURIComponent(resultPoint));
       if (decodeURIComponent(preChoice) === "1") {
-        resultPoint=parseInt(resultPoint) + 1;
+        resultPoint+=1;
+      } else {
+        resultPoint=resultPoint + "0";
       }
       console.log('あああ' + resultPoint);
+      var counter=function(str,seq){
+          return str.split(seq).length - 1;
+      }
+      correctCt=counter(resultPoint,"1")
+      console.log(resultPoint+":"+correctCt);
       function  firstscript(){
-        document.getElementById('resultCount').innerHTML = 'あなたは3問中' + resultPoint + '問正解でした。';
+        document.getElementById('resultCount').innerHTML = 'あなたは3問中' + counter(resultPoint,"1") + '問正解でした。';
         var resultText;
-        if (resultPoint == 3){
+        if (correctCt == 3){
           resultText = "おめでとうございます！素晴らしいですね！<br>弊社のことを知っていただきありがとうございます。"
         } else {
           resultText = "ご回答ありがとうございました。<br>機会がございましたら弊社のことをもっと調べていただければと存じます。"
         }
         document.getElementById('resultText').innerHTML = resultText;
+
+        var questionResult1 = "第一問は"
+        if (resultPoint[0] == "1"){
+          questionResult1+="正解です。<br>"
+        } else {
+          questionResult1+="不正解です。<br>"
+        }
+
+        questionResult1 += "人気の発毛剤は弊社が誇るスカルプDです。";
+        document.getElementById('questionResult1').innerHTML = questionResult1;
+
+
+        var questionResult2 = "第二問は"
+        if (resultPoint[1] == "1"){
+          questionResult2+="正解です。<br>"
+        } else {
+          questionResult2+="不正解です。<br>"
+        }
+
+
+        questionResult2 += "弊社の発毛剤は11もの種類がございます。";
+        document.getElementById('questionResult2').innerHTML = questionResult2;
+
+
+        var questionResult3 = "第三問は"
+        if (resultPoint[2] == "1"){
+          questionResult3+="正解です。<br>"
+        } else {
+          questionResult3+="不正解です。<br>"
+        }
+
+        questionResult3 += "CMに登場しているのは、ミノキ兄弟（草彅剛さんと香取慎吾さん）です。";
+        document.getElementById('questionResult3').innerHTML = questionResult3;
+
       }
     </script>
   </head>
@@ -38,6 +79,16 @@
   <p><div id='resultCount'></div></p>
 
   <p><div id='resultText'></div></p>
+
+  <br>
+
+  <p>〜回答・解説〜</p>
+
+  <p><div id='questionResult1'></div></p>
+
+  <p><div id='questionResult2'></div></p>
+
+  <p><div id='questionResult3'></div></p>
 
   </body>
 </html>
